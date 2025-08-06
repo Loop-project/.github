@@ -40,15 +40,23 @@ Loop는 해외 학교 학생들이 자유롭게 소통하고 정보를 공유할
 ---
 
 ## 📂 프로젝트 구조
-loop/
-├─ backend/ # Spring Boot API
-│ ├─ domain/ # 엔티티, 서비스, 컨트롤러
-│ └─ global/ # 보안, 예외 처리 등
-├─ frontend/ # React + Vite
-│ ├─ src/components
-│ ├─ src/pages
-│ └─ src/api
-└─ docker/ # Dockerfile & 배포 스크립트
+📂 loop  
+ ┣ 📂 domain  
+ ┃ ┣ 📂 ad  
+ ┃ ┣ 📂 auth  
+ ┃ ┣ 📂 post  
+ ┃ ┗ 📂 user  
+ ┣ 📂 global  
+ ┃ ┣ 📂 common  
+ ┃ ┃ ┗ 📂 error  
+ ┃ ┃ ┗ 📄 BaseEntity.java  
+ ┃ ┗ 📂 config  
+ ┃    ┣ 📂 s3  
+ ┃    ┣ ☕ CorsConfig.java  
+ ┃    ┣ ☕ S3Config.java  
+ ┃    ┣ 📄 SecurityConfig.java  
+ ┃    ┗ 📄 SwaggerConfig.java  
+
 
 ---
 
